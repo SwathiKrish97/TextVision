@@ -1,22 +1,12 @@
 cat > .gitignore << 'EOF'
+# Ignore only unwanted things, not data folders
 __pycache__/
 .DS_Store
 .env
-
-# Large or generated assets
 *.pt
 *.pkl
-*.npy
-*.csv
-*.json
-*.mp4
-*.mov
-*.avi
 *.zip
-
-# Folders to keep local only
-DATA/
-PROCESSED_DATA/
-OUTPUT/
+*.npy
 EOF
+
 
